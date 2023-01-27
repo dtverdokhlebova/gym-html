@@ -53,6 +53,11 @@
   }
 }
 @media (max-width: 767px) {
+  .widget-call--mob-right {
+    right: 35px;
+  }
+}
+@media (max-width: 767px) {
   .widget-call.active {
     --translate-y: 0;
   }

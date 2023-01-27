@@ -59,9 +59,11 @@ function popup() {
   }
 
   if (document.querySelector('#leave')) {
+    let isPopupShown = false
     document.addEventListener('mouseleave', (event) => {
-      if (event.clientY < 0) {
+      if (event.clientY < 0 && !isPopupShown) {
         window.openPopup('leave')
+        isPopupShown = true
       }
     })
   }
@@ -104,7 +106,7 @@ function widgetVideo() {
 
   if (widgetElement) {
     const player = new Plyr(document.querySelector('.widget-video__container'), {
-      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'pip', 'airplay', 'fullscreen'],
+      controls: ['play-large', 'play', 'progress', 'current-time', 'volume', 'captions', 'fullscreen'],
       hideControls: true,
       ratio: widgetElement.classList.contains('widget-video--vertical') ? '9:16' : '16:9',
       youtube: {
@@ -113,16 +115,14 @@ function widgetVideo() {
     })
 
     const closeButton = widgetElement.querySelector('.widget-video__close-btn')
-    widgetElement.addEventListener('click', (event) => {
-      if (event.composedPath().includes(closeButton)) {
-        if (player.fullscreen.active) {
-          player.fullscreen.exit()
-        }
-        player.stop()
-        widgetElement.classList.add('hide')
-      } else {
-        player.fullscreen.toggle()
-        player.play()
+    closeButton.addEventListener('click', () => {
+      player.stop()
+      widgetElement.classList.add('hide')
+    })
+
+    document.addEventListener('click', (event) => {
+      if (event.target.closest('button.plyr__control--overlaid') && !player.fullscreen.active) {
+        player.fullscreen.enter()
       }
     })
   }
