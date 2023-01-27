@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blocks/header.css">
+    <link rel="stylesheet" href="assets/css/blocks/footer.css">
+    <link rel="stylesheet" href="assets/css/blocks/contact-form.css">
+    <link rel="stylesheet" href="assets/css/blocks/popup.css">
+    <link rel="stylesheet" href="assets/css/blocks/free-consultation.css">
+    <link rel="stylesheet" href="assets/css/blocks/widget-nav.css">
+    <link rel="stylesheet" href="assets/css/blocks/widget-call.css">
+    <link rel="stylesheet" href="assets/css/blocks/widget-video.css">
+    <link rel="stylesheet" href="assets/css/blocks/widget-gift.css">
+    <link rel="stylesheet" href="assets/css/blocks/lucky-wheel.css">
+    <link rel="stylesheet" href="assets/css/blocks/banner.css">
+    <link rel="stylesheet" href="assets/css/blocks/quiz.css">
+  </head>
+  <body class="transition-disabled">
+    <div class="wrapper">
+      <header class="header header--absolute">
+        <div class="inner">
+          <div class="header__company"><a class="header__logo" href="/"><img src="assets/img/logo.svg" alt=""></a>
+            <div class="header__descr">250 филиалов по&nbsp;всей России</div>
+          </div>
+          <div class="header__schedule">
+            <div class="header__schedule-top">Режим работы:</div>
+            <div class="header__schedule-bot">ПН-Вс 10:00-20:00</div>
+          </div>
+          <div class="header__connect"><a class="header__connect-link" href="#">
+              <div class="header__connect-img"><img src="assets/img/icon_wa.svg" alt=""></div>Связаться в&nbsp;WhatsApp</a>
+            <div class="header__connect-text">Среднее время ответа: 60 секунд</div>
+          </div>
+          <div class="header__contacts"><a class="header__tel" href="tel:+74992837379">+7 499 283-73-79</a><a class="header__consult" href="#" onclick="window.openPopup('consultation'); return false;">Быстрая консультация</a></div>
+        </div>
+      </header>
+      <main class="main main--pt0">
+        <div class="banner">
+          <div class="banner__bg"><img src="assets/img/banner-bg.png" alt=""/></div>
+          <div class="inner">
+            <div class="banner__tag">Скидки на годовой абонемент!</div>
+            <h1 class="banner__title">В&nbsp;честь открытия нового филиала <b>дарим 150 дней</b> в&nbsp;подарок!
+            </h1>
+            <div class="banner__descr">Современный тренажерный зал в&nbsp;самом центре города.</div>
+            <div class="banner__benefits">
+              <div class="banner__benefit">
+                <div class="banner__benefit-icon"><img src="assets/img/banner-benefit_1.svg" alt=""/></div>
+                <div class="banner__benefit-name">Тренажерный <br> зал</div>
+              </div>
+              <div class="banner__benefit">
+                <div class="banner__benefit-icon"><img src="assets/img/banner-benefit_2.svg" alt=""/></div>
+                <div class="banner__benefit-name">Спортивный <br> бассейн</div>
+              </div>
+              <div class="banner__benefit">
+                <div class="banner__benefit-icon"><img src="assets/img/banner-benefit_3.svg" alt=""/></div>
+                <div class="banner__benefit-name">Тренировки <br> по&nbsp;боксу</div>
+              </div>
+              <div class="banner__benefit">
+                <div class="banner__benefit-icon"><img src="assets/img/banner-benefit_4.svg" alt=""/></div>
+                <div class="banner__benefit-name">Индивидуальные <br> тренировки</div>
+              </div>
+            </div>
+            <div class="banner__images">
+              <div class="banner__img"><img src="assets/img/banner-img.png" alt=""/></div>
+            </div>
+            <div class="banner__foot">
+              <button class="ui-button banner__ui-button ui-button--xl ui-button--glare"><span>Получить предложение</span>
+              </button><a class="banner__connect" href="#">спросить в&nbsp;whatsapp
+                <div class="banner__connect-icon"><img src="assets/img/icon_wa.svg" alt=""/></div></a>
+            </div>
+          </div>
+        </div>
+        <section class="section" id="first-training">
+          <div class="inner">
+            <h2 class="ui-h2 ui-h2--mb ui-h2--max-w ui-h2--center">ответьте на 3 вопроса И РАССЧИТАЙТЕ СТОИМОСТЬ ЗА 45 СЕКУНД
+            </h2>
+            <form class="quiz" action="#">
+              <div class="quiz-prize">
+                <div class="quiz-prize__conatiner">
+                  <h3 class="quiz-prize__title" data-finish-text="Вы сейчас получите:">В&nbsp;конце теста вы&nbsp;получите:</h3>
+                  <div class="quiz-prize__wrapper">
+                    <div class="quiz-prize__item">
+                      <div class="quiz-prize__img"><img src="assets/img/quiz-prize_1.webp" alt=""/>
+                        <div class="quiz-prize__icon quiz-prize__icon--close">
+                          <svg width="78" height="78" viewbox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.6004 31.2V23.4C15.6004 17.1939 18.0657 11.2421 22.4541 6.8537C26.8424 2.46535 32.7943 0 39.0004 0C45.2065 0 51.1583 2.46535 55.5467 6.8537C59.935 11.2421 62.4004 17.1939 62.4004 23.4V31.2H66.3004C68.3691 31.2 70.353 32.0218 71.8158 33.4846C73.2786 34.9474 74.1004 36.9313 74.1004 39V70.2C74.1004 72.2687 73.2786 74.2526 71.8158 75.7154C70.353 77.1782 68.3691 78 66.3004 78H11.7004C9.6317 78 7.64774 77.1782 6.18496 75.7154C4.72217 74.2526 3.90039 72.2687 3.90039 70.2V39C3.90039 34.71 7.41039 31.2 11.7004 31.2H15.6004ZM35.1004 57.447V66.3H42.9004V57.447C44.3874 56.5885 45.5496 55.2633 46.2067 53.6769C46.8637 52.0906 46.979 50.3318 46.5346 48.6732C46.0902 47.0147 45.111 45.5491 43.7487 44.5038C42.3865 43.4586 40.7174 42.892 39.0004 42.892C37.2833 42.892 35.6143 43.4586 34.2521 44.5038C32.8898 45.5491 31.9106 47.0147 31.4662 48.6732C31.0218 50.3318 31.137 52.0906 31.7941 53.6769C32.4512 55.2633 33.6134 56.5885 35.1004 57.447ZM27.3004 23.4V31.2H50.7004V23.4C50.7004 20.297 49.4677 17.321 47.2735 15.1269C45.0794 12.9327 42.1034 11.7 39.0004 11.7C35.8974 11.7 32.9214 12.9327 30.7272 15.1269C28.5331 17.321 27.3004 20.297 27.3004 23.4Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                        <div class="quiz-prize__icon quiz-prize__icon--open">
+                          <svg width="78" height="78" viewbox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4541 6.8537C26.8424 2.46535 32.7943 0 39.0004 0C45.2065 0 51.1583 2.46535 55.5467 6.8537C59.935 11.2421 62.4004 17.1939 62.4004 23.4V31.2H66.3004C68.3691 31.2 70.353 32.0218 71.8158 33.4846C73.2786 34.9474 74.1004 36.9313 74.1004 39V70.2C74.1004 72.2687 73.2786 74.2526 71.8158 75.7154C70.353 77.1782 68.3691 78 66.3004 78H11.7004C9.6317 78 7.64774 77.1782 6.18496 75.7154C4.72217 74.2526 3.90039 72.2687 3.90039 70.2V39C3.90039 34.71 7.41039 31.2 11.7004 31.2H15.6004H27.3004H50.7004V23.4C50.7004 20.297 49.4677 17.321 47.2735 15.1269C45.0794 12.9327 42.1034 11.7 39.0004 11.7C35.8974 11.7 32.9214 12.9327 30.7272 15.1269L22.4541 6.8537ZM35.1004 66.3V57.447C33.6134 56.5885 32.4512 55.2633 31.7941 53.6769C31.137 52.0906 31.0218 50.3318 31.4662 48.6732C31.9106 47.0147 32.8898 45.5491 34.2521 44.5038C35.6143 43.4586 37.2833 42.892 39.0004 42.892C40.7174 42.892 42.3865 43.4586 43.7487 44.5038C45.111 45.5491 46.0902 47.0147 46.5346 48.6732C46.979 50.3318 46.8637 52.0906 46.2067 53.6769C45.5496 55.2633 44.3874 56.5885 42.9004 57.447V66.3H35.1004Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="quiz-prize__name">Бесплатная тренировка</div>
+                    </div>
+                    <div class="quiz-prize__item">
+                      <div class="quiz-prize__img"><img src="assets/img/quiz-prize_2.webp" alt=""/>
+                        <div class="quiz-prize__icon quiz-prize__icon--close">
+                          <svg width="78" height="78" viewbox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.6004 31.2V23.4C15.6004 17.1939 18.0657 11.2421 22.4541 6.8537C26.8424 2.46535 32.7943 0 39.0004 0C45.2065 0 51.1583 2.46535 55.5467 6.8537C59.935 11.2421 62.4004 17.1939 62.4004 23.4V31.2H66.3004C68.3691 31.2 70.353 32.0218 71.8158 33.4846C73.2786 34.9474 74.1004 36.9313 74.1004 39V70.2C74.1004 72.2687 73.2786 74.2526 71.8158 75.7154C70.353 77.1782 68.3691 78 66.3004 78H11.7004C9.6317 78 7.64774 77.1782 6.18496 75.7154C4.72217 74.2526 3.90039 72.2687 3.90039 70.2V39C3.90039 34.71 7.41039 31.2 11.7004 31.2H15.6004ZM35.1004 57.447V66.3H42.9004V57.447C44.3874 56.5885 45.5496 55.2633 46.2067 53.6769C46.8637 52.0906 46.979 50.3318 46.5346 48.6732C46.0902 47.0147 45.111 45.5491 43.7487 44.5038C42.3865 43.4586 40.7174 42.892 39.0004 42.892C37.2833 42.892 35.6143 43.4586 34.2521 44.5038C32.8898 45.5491 31.9106 47.0147 31.4662 48.6732C31.0218 50.3318 31.137 52.0906 31.7941 53.6769C32.4512 55.2633 33.6134 56.5885 35.1004 57.447ZM27.3004 23.4V31.2H50.7004V23.4C50.7004 20.297 49.4677 17.321 47.2735 15.1269C45.0794 12.9327 42.1034 11.7 39.0004 11.7C35.8974 11.7 32.9214 12.9327 30.7272 15.1269C28.5331 17.321 27.3004 20.297 27.3004 23.4Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                        <div class="quiz-prize__icon quiz-prize__icon--open">
+                          <svg width="78" height="78" viewbox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4541 6.8537C26.8424 2.46535 32.7943 0 39.0004 0C45.2065 0 51.1583 2.46535 55.5467 6.8537C59.935 11.2421 62.4004 17.1939 62.4004 23.4V31.2H66.3004C68.3691 31.2 70.353 32.0218 71.8158 33.4846C73.2786 34.9474 74.1004 36.9313 74.1004 39V70.2C74.1004 72.2687 73.2786 74.2526 71.8158 75.7154C70.353 77.1782 68.3691 78 66.3004 78H11.7004C9.6317 78 7.64774 77.1782 6.18496 75.7154C4.72217 74.2526 3.90039 72.2687 3.90039 70.2V39C3.90039 34.71 7.41039 31.2 11.7004 31.2H15.6004H27.3004H50.7004V23.4C50.7004 20.297 49.4677 17.321 47.2735 15.1269C45.0794 12.9327 42.1034 11.7 39.0004 11.7C35.8974 11.7 32.9214 12.9327 30.7272 15.1269L22.4541 6.8537ZM35.1004 66.3V57.447C33.6134 56.5885 32.4512 55.2633 31.7941 53.6769C31.137 52.0906 31.0218 50.3318 31.4662 48.6732C31.9106 47.0147 32.8898 45.5491 34.2521 44.5038C35.6143 43.4586 37.2833 42.892 39.0004 42.892C40.7174 42.892 42.3865 43.4586 43.7487 44.5038C45.111 45.5491 46.0902 47.0147 46.5346 48.6732C46.979 50.3318 46.8637 52.0906 46.2067 53.6769C45.5496 55.2633 44.3874 56.5885 42.9004 57.447V66.3H35.1004Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="quiz-prize__name">Консультация с&nbsp;тренером</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-prize__coach">
+                  <div class="quiz-prize__ava"><img src="assets/img/quiz-prize_ava.webp" alt=""/></div>
+                  <div class="quiz-prize__info">
+                    <div class="quiz-prize__coach-name">Сергей Лавров</div>
+                    <div class="quiz-prize__job">Главный тренер</div>
+                  </div>
+                  <div class="quiz-prize__online">Онлайн</div>
+                </div>
+              </div>
+              <div class="quiz__container">
+                <div class="quiz__progress">
+                  <div class="quiz__progress-val"></div><span class="quiz__progress-text"><span class="quiz__progress-grey">Расчет</span> пройден на <span class="quiz__progress-num">0</span>%</span>
+                </div>
+                <div class="quiz-item active">
+                  <div class="quiz-item__head">
+                    <div class="quiz-item__num">Вопрос 1</div>
+                    <div class="quiz-item__title">Какое направление вас интересует?</div>
+                  </div>
+                  <div class="quiz-item__body">
+                    <div class="quiz-item__grid quiz-item__grid--4col">
+                      <div class="ui-choose ui-choose--img">
+                        <input id="individual-training" name="orientation" type="radio"/>
+                        <label for="individual-training">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_1.webp" alt=""/></div>Индивидуальные тренировки
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="fitness" name="orientation" type="radio"/>
+                        <label for="fitness">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_2.webp" alt=""/></div>Фитнес
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="cross-fit" name="orientation" type="radio"/>
+                        <label for="cross-fit">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_3.webp" alt=""/></div>Кросс фит
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="gym" name="orientation" type="radio"/>
+                        <label for="gym">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_4.webp" alt=""/></div>Тренажерный зал
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="swimming-pool" name="orientation" type="radio"/>
+                        <label for="swimming-pool">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_5.webp" alt=""/></div>Бассейн
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="yoga" name="orientation" type="radio"/>
+                        <label for="yoga">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_6.webp" alt=""/></div>Йога
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="martial-arts" name="orientation" type="radio"/>
+                        <label for="martial-arts">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_7.webp" alt=""/></div>Боевые искусства
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-item">
+                  <div class="quiz-item__head">
+                    <div class="quiz-item__num">Вопрос 1.2</div>
+                    <div class="quiz-item__title">Какое направление вас интересует? (несколько вариантов)</div>
+                  </div>
+                  <div class="quiz-item__body">
+                    <div class="quiz-item__grid quiz-item__grid--4col">
+                      <div class="ui-choose ui-choose--img">
+                        <input id="individual-training2" type="checkbox"/>
+                        <label for="individual-training2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_1.webp" alt=""/></div>Индивидуальные тренировки
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="fitness2" type="checkbox"/>
+                        <label for="fitness2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_2.webp" alt=""/></div>Фитнес
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="cross-fit2" type="checkbox"/>
+                        <label for="cross-fit2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_3.webp" alt=""/></div>Кросс фит
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="gym2" type="checkbox"/>
+                        <label for="gym2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_4.webp" alt=""/></div>Тренажерный зал
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="swimming-pool2" type="checkbox"/>
+                        <label for="swimming-pool2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_5.webp" alt=""/></div>Бассейн
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="yoga2" type="checkbox"/>
+                        <label for="yoga2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_6.webp" alt=""/></div>Йога
+                        </label>
+                      </div>
+                      <div class="ui-choose ui-choose--img">
+                        <input id="martial-arts2" type="checkbox"/>
+                        <label for="martial-arts2">
+                          <div class="ui-choose__img"><img src="assets/img/quiz-radio_7.webp" alt=""/></div>Боевые искусства
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-item">
+                  <div class="quiz-item__head">
+                    <div class="quiz-item__num">Вопрос 2</div>
+                    <div class="quiz-item__title">Какую цель вы&nbsp;преследуете от&nbsp;тренировок? </div>
+                  </div>
+                  <div class="quiz-item__body">
+                    <div class="quiz-item__grid">
+                      <div class="ui-choose">
+                        <input id="lose-weight" name="target" type="radio"/>
+                        <label for="lose-weight">Похудеть
+                        </label>
+                      </div>
+                      <div class="ui-choose">
+                        <input id="gain-weight" name="target" type="radio"/>
+                        <label for="gain-weight">Набрать вес
+                        </label>
+                      </div>
+                      <div class="ui-choose">
+                        <input id="rehabilitation" name="target" type="radio"/>
+                        <label for="rehabilitation">Общее оздоровление
+                        </label>
+                      </div>
+                      <div class="ui-choose">
+                        <input id="self-defense" name="target" type="radio"/>
+                        <label for="self-defense">Обучиться самообороне
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-item">
+                  <div class="quiz-item__head">
+                    <div class="quiz-item__num">Вопрос 2.2</div>
+                    <div class="quiz-item__title">Какую цель вы&nbsp;преследуете от&nbsp;тренировок? (несколько вариантов)</div>
+                  </div>
+                  <div class="quiz-item__body">
+                    <div class="quiz-item__grid">
+                      <div class="ui-choose">
+                        <input id="lose-weight2" type="checkbox"/>
+                        <label for="lose-weight2">Похудеть
+                        </label>
+                      </div>
+                      <div class="ui-choose">
+                        <input id="gain-weight2" type="checkbox"/>
+                        <label for="gain-weight2">Набрать вес
+                        </label>
+                      </div>
+                      <div class="ui-choose">
+                        <input id="rehabilitation2" type="checkbox"/>
+                        <label for="rehabilitation2">Общее оздоровление
+                        </label>
+                      </div>
+                      <div class="ui-choose">
+                        <input id="self-defense2" type="checkbox"/>
+                        <label for="self-defense2">Обучиться самообороне
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-item">
+                  <div class="quiz-item__head">
+                    <div class="quiz-item__num">Вопрос 3</div>
+                    <div class="quiz-item__title">Сколько тренировок в неделю вы хотите посещать?</div>
+                  </div>
+                  <div class="quiz-item__body quiz-item__body--max-w380 quiz-item__body--centered">
+                    <div class="quiz-item__label">Укажите количество дней
+                    </div>
+                    <div class="ui-input">
+                      <input id="workout-days" type="text" placeholder="3  дня"/>
+                    </div>
+                    <div class="ui-checkbox quiz-item__ui-checkbox">
+                      <input id="difficult-to-answer-workout-days" name="difficult-to-answer-workout-days" type="checkbox" data-quiz-difficult-checkbox="data-quiz-difficult-checkbox"/>
+                      <label for="difficult-to-answer-workout-days">Затрудняюсь ответить
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-item">
+                  <div class="quiz-item__head">
+                    <div class="quiz-item__num">Вопрос 4</div>
+                    <div class="quiz-item__title">Загрузите файл:</div>
+                  </div>
+                  <div class="quiz-item__body quiz-item__body--max-w555 quiz-item__body--centered">
+                    <div class="quiz-item__label quiz-item__label--mb30">Можете прикрепить файл в&nbsp;любом формате
+                    </div>
+                    <div class="ui-input ui-input--file">
+                      <input id="file" type="file"/>
+                      <label for="file">
+                        <div class="ui-input__filename">Файл не выбран</div>
+                        <div class="ui-input__add">Добавить</div>
+                      </label>
+                    </div>
+                    <div class="ui-checkbox quiz-item__ui-checkbox">
+                      <input id="difficult-to-answer-file" name="difficult-to-answer-file" type="checkbox" data-quiz-difficult-checkbox="data-quiz-difficult-checkbox"/>
+                      <label for="difficult-to-answer-file">Затрудняюсь ответить
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz__actions">
+                  <button class="ui-button quiz__ui-button ui-button--back ui-button--hidden" data-quiz-back="data-quiz-back" type="button">Назад
+                  </button>
+                  <button class="ui-button quiz__ui-button ui-button--next ui-button--disabled" data-quiz-next="data-quiz-next" type="button"><span class="ui-button__text">Далее</span>
+                    <div class="ui-button__hint">Выберите один вариант ответа и&nbsp;нажмите на&nbsp;кнопку &laquo;Далее&raquo;</div>
+                  </button>
+                </div>
+                <div class="quiz-passed">
+                  <div class="quiz-passed__info">
+                    <div class="quiz-passed__label">Тест успешно пройден!</div>
+                    <div class="contact-form">
+                      <div class="contact-form__label">Где удобно связаться с&nbsp;вами, чтобы прислать расчет и&nbsp;бонусы?</div>
+                      <div class="contact-form__radios">
+                        <div class="contact-form__radio">
+                          <input id="quiz-passedwa" value="quiz-passedwa" type="radio" data-input-placeholder="Ваш телефон в WhatsApp" name="quiz-passedcommunication-options" checked="checked"/>
+                          <label for="quiz-passedwa">
+                            <div class="contact-form__radio-icon"><img src="assets/img/contact-form_wa.svg" alt=""/></div>
+                            <div class="contact-form__radio-name">WhatsApp</div>
+                          </label>
+                        </div>
+                        <div class="contact-form__radio">
+                          <input id="quiz-passedtg" value="quiz-passedtg" type="radio" data-input-placeholder="Ваш телефон в Telegram" name="quiz-passedcommunication-options"/>
+                          <label for="quiz-passedtg">
+                            <div class="contact-form__radio-icon"><img src="assets/img/contact-form_tg.svg" alt=""/></div>
+                            <div class="contact-form__radio-name">Telegram</div>
+                          </label>
+                        </div>
+                        <div class="contact-form__radio">
+                          <input id="quiz-passedcall" value="quiz-passedcall" type="radio" data-input-placeholder="Ваш телефон" name="quiz-passedcommunication-options"/>
+                          <label for="quiz-passedcall">
+                            <div class="contact-form__radio-icon"><img src="assets/img/contact-form_tel.svg" alt=""/></div>
+                            <div class="contact-form__radio-name">Телефон</div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="ui-input contact-form__ui-input">
+                        <input id="tel" type="text" placeholder="Ваш телефон в WhatsApp"/>
+                      </div>
+                      <button class="ui-button contact-form__ui-button ui-button--white" type="submit">Получить расчет <span class="ui-button__label">+ БОНУСЫ </span>
+                      </button>
+                      <div class="ui-checkbox contact-form__ui-checkbox ui-checkbox--m-fz10 ui-checkbox--black">
+                        <input id="quiz-passedpolicy-agreement" name="quiz-passedpolicy-agreement" type="checkbox"/>
+                        <label for="quiz-passedpolicy-agreement">Ознакомлен с  <a href="#">политикой конфиденциальности</a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz-passed__img"><img src="assets/img/quiz-passed_tel.png" alt=""/></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="popup" id="download-schedule">
+          <div class="popup__container">
+            <button class="popup__close-btn"></button>
+            <div class="popup-form">
+              <div class="popup-form__title">Скачайте сейчас</div>
+              <div class="popup-form__subtitle">Расписание тренировок на&nbsp;2023 год</div>
+              <form class="contact-form popup-form__contact-form contact-form--popup" action="#">
+                <div class="contact-form__label">Вам куда удобнее отправить?</div>
+                <div class="contact-form__radios">
+                  <div class="contact-form__radio">
+                    <input id="download-schedulewa" value="download-schedulewa" type="radio" data-input-placeholder="Ваш телефон в WhatsApp" name="download-schedulecommunication-options" checked="checked"/>
+                    <label for="download-schedulewa">
+                      <div class="contact-form__radio-icon"><img src="assets/img/contact-form_wa.svg" alt=""/></div>
+                      <div class="contact-form__radio-name">WhatsApp</div>
+                    </label>
+                  </div>
+                  <div class="contact-form__radio">
+                    <input id="download-scheduletg" value="download-scheduletg" type="radio" data-input-placeholder="Ваш телефон в Telegram" name="download-schedulecommunication-options"/>
+                    <label for="download-scheduletg">
+                      <div class="contact-form__radio-icon"><img src="assets/img/contact-form_tg.svg" alt=""/></div>
+                      <div class="contact-form__radio-name">Telegram</div>
+                    </label>
+                  </div>
+                  <div class="contact-form__radio">
+                    <input id="download-schedulecall" value="download-schedulecall" type="radio" data-input-placeholder="Ваш телефон" name="download-schedulecommunication-options"/>
+                    <label for="download-schedulecall">
+                      <div class="contact-form__radio-icon"><img src="assets/img/contact-form_tel.svg" alt=""/></div>
+                      <div class="contact-form__radio-name">Телефон</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="ui-input contact-form__ui-input ui-input--popup">
+                  <input id="download-scheduletel" type="text" placeholder="Ваш телефон в WhatsApp"/>
+                </div>
+                <button class="ui-button contact-form__ui-button ui-button--white" type="submit">Скачать сейчас
+                </button>
+                <div class="ui-checkbox contact-form__ui-checkbox ui-checkbox--xs ui-checkbox--black">
+                  <input id="download-schedulepolicy-agreement" name="download-schedulepolicy-agreement" type="checkbox"/>
+                  <label for="download-schedulepolicy-agreement">Ознакомлен с  <a href="#">политикой конфиденциальности</a>
+                  </label>
+                </div>
+              </form>
+              <div class="popup-form__img"><img src="assets/img/contact-from_catalog.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup--p-xs" id="consultation">
+          <div class="popup__container">
+            <button class="popup__close-btn"></button>
+            <div class="free-consultation">
+              <div class="free-consultation__title">Бесплатная консультация</div>
+              <div class="free-consultation__wrapper">
+                <div class="free-consultation__list">
+                  <div class="free-consultation__list-label">На консультации:</div>
+                  <ul class="ui-ul">
+                    <li>Задам пару уточняющих вопросов</li>
+                    <li>Подберем несколько проектов</li>
+                    <li>Рассчитаю стоимость</li>
+                    <li>Расскажу этапы предстоящей работы</li>
+                    <li>Если все понравится, согласуем время и&nbsp;место встречи для составления полной сметы</li>
+                  </ul>
+                </div>
+                <div class="free-consultation__contact">
+                  <div class="free-consultation__coach">
+                    <div class="free-consultation__coach-ava"><img src="assets/img/quiz-prize_ava.webp" alt=""/></div>
+                    <div class="free-consultation__coach-info">
+                      <div class="free-consultation__coach-name">Сергей Лавров</div>
+                      <div class="free-consultation__coach-job">Главный тренер</div>
+                    </div>
+                  </div>
+                  <form class="free-consultation__form">
+                    <div class="free-consultation__form-label">Оставьте заявку на консультацию</div>
+                    <div class="ui-input free-consultation__ui-input ui-input--popup">
+                      <input id="consultation-tel" type="text" placeholder="Ваш телефон"/>
+                    </div>
+                    <div class="ui-input free-consultation__ui-input ui-input--popup">
+                      <input id="consultation-name" type="text" placeholder="Ваше имя"/>
+                    </div>
+                    <button class="ui-button free-consultation__ui-button ui-button--white" type="submit">Жду звонка
+                    </button>
+                    <div class="ui-checkbox free-consultation__ui-checkbox ui-checkbox--xs ui-checkbox--black">
+                      <input id="consultation-policy-agreement" name="consultation-policy-agreement" type="checkbox"/>
+                      <label for="consultation-policy-agreement">Ознакомлен с  <a href="#">политикой конфиденциальности</a>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup--lucky-wheel" id="lucky-wheel">
+          <div class="popup__container">
+            <button class="popup__close-btn"></button>
+            <div class="lucky-wheel">
+              <div class="lucky-wheel__wrapper">
+                <svg class="lucky-wheel__pointer" width="74" height="39" viewbox="0 0 74 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38.5 0H74V39H38.5L0 19.5L38.5 0Z" fill="currentColor"></path>
+                  <path d="M9.29395 19.5L39.2294 5H70V34H39.2294L9.29395 19.5Z" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+              <form class="lucky-wheel__form" action="#">
+                <div class="lucky-wheel__radios" hidden="hidden">
+                  <label for="prize1">Подарок 1</label>
+                  <input id="prize1" type="radio" name="lucky-wheel"/>
+                  <label for="prize2">Подарок 2</label>
+                  <input id="prize2" type="radio" name="lucky-wheel"/>
+                  <label for="prize3">Подарок 3</label>
+                  <input id="prize3" type="radio" name="lucky-wheel"/>
+                  <label for="prize4">Подарок 4</label>
+                  <input id="prize4" type="radio" name="lucky-wheel"/>
+                  <label for="prize5">Подарок 5</label>
+                  <input id="prize5" type="radio" name="lucky-wheel"/>
+                  <label for="prize6">Подарок 6</label>
+                  <input id="prize6" type="radio" name="lucky-wheel"/>
+                </div>
+                <div class="lucky-wheel__title">Испытайте <b>удачу</b>
+                </div>
+                <div class="lucky-wheel__descr">Оставьте свой номер телефона, вращайте колесо и&nbsp;выйграйте подарки от&nbsp;нас</div>
+                <div class="ui-input lucky-wheel__ui-input ui-input--popup">
+                  <input id="lucky-wheel-tel" type="text" placeholder="Ваш телефон в WhatsApp"/>
+                </div>
+                <button class="ui-button lucky-wheel__ui-button" type="submit" data-spin-wheel="data-spin-wheel">Вращать колесо
+                </button>
+                <div class="ui-checkbox lucky-wheel__ui-checkbox ui-checkbox--fz10 ui-checkbox--grey">
+                  <input id="lucky-wheel-policy-agreement" name="lucky-wheel-policy-agreement" type="checkbox"/>
+                  <label for="lucky-wheel-policy-agreement">Ознакомлен с  <a href="#">политикой конфиденциальности</a>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="leave">
+          <div class="popup__container">
+            <button class="popup__close-btn"></button>
+            <div class="popup-form">
+              <div class="popup-form__title">Уже уходите?</div>
+              <div class="popup-form__subtitle">Оставьте заявку и&nbsp;получите тренировку в&nbsp;подарок</div>
+              <form class="contact-form popup-form__contact-form contact-form--popup" action="#">
+                <div class="contact-form__label">Где удобно с вами связаться?</div>
+                <div class="contact-form__radios">
+                  <div class="contact-form__radio">
+                    <input id="leavewa" value="leavewa" type="radio" data-input-placeholder="Ваш телефон в WhatsApp" name="leavecommunication-options" checked="checked"/>
+                    <label for="leavewa">
+                      <div class="contact-form__radio-icon"><img src="assets/img/contact-form_wa.svg" alt=""/></div>
+                      <div class="contact-form__radio-name">WhatsApp</div>
+                    </label>
+                  </div>
+                  <div class="contact-form__radio">
+                    <input id="leavetg" value="leavetg" type="radio" data-input-placeholder="Ваш телефон в Telegram" name="leavecommunication-options"/>
+                    <label for="leavetg">
+                      <div class="contact-form__radio-icon"><img src="assets/img/contact-form_tg.svg" alt=""/></div>
+                      <div class="contact-form__radio-name">Telegram</div>
+                    </label>
+                  </div>
+                  <div class="contact-form__radio">
+                    <input id="leavecall" value="leavecall" type="radio" data-input-placeholder="Ваш телефон" name="leavecommunication-options"/>
+                    <label for="leavecall">
+                      <div class="contact-form__radio-icon"><img src="assets/img/contact-form_tel.svg" alt=""/></div>
+                      <div class="contact-form__radio-name">Телефон</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="ui-input contact-form__ui-input ui-input--popup">
+                  <input id="leavetel" type="text" placeholder="Ваш телефон в WhatsApp"/>
+                </div>
+                <button class="ui-button contact-form__ui-button ui-button--white" type="submit">Скачать сейчас
+                </button>
+                <div class="ui-checkbox contact-form__ui-checkbox ui-checkbox--xs ui-checkbox--black">
+                  <input id="leavepolicy-agreement" name="leavepolicy-agreement" type="checkbox"/>
+                  <label for="leavepolicy-agreement">Ознакомлен с  <a href="#">политикой конфиденциальности</a>
+                  </label>
+                </div>
+              </form>
+              <div class="popup-form__img"><img src="assets/img/contact-from_leave.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer__main">
+            <div class="footer__text">
+              <p>ООО “Спорт-фит”</p>
+              <p>Copyright © 2006 - 2022</p>
+            </div><a class="footer__link" href="#">Политика конфиденциальности</a>
+            <button class="footer__unfold" data-open-text="Свернуть">Дисклеймер
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_8760)">
+                  <circle cx="10" cy="10" r="10" fill="currentColor"></circle>
+                  <path d="M5.58366 12.2487C5.43088 12.0959 5.35449 11.9015 5.35449 11.6654C5.35449 11.4293 5.43088 11.2348 5.58366 11.082L9.41699 7.2487C9.50033 7.16536 9.5906 7.1062 9.68783 7.0712C9.78505 7.03675 9.88921 7.01953 10.0003 7.01953C10.1114 7.01953 10.2192 7.04036 10.3237 7.08203C10.4275 7.1237 10.5142 7.17925 10.5837 7.2487L14.417 11.082C14.5698 11.2348 14.6462 11.4293 14.6462 11.6654C14.6462 11.9015 14.5698 12.0959 14.417 12.2487C14.2642 12.4015 14.0698 12.4779 13.8337 12.4779C13.5975 12.4779 13.4031 12.4015 13.2503 12.2487L10.0003 8.9987L6.75033 12.2487C6.59755 12.4015 6.4031 12.4779 6.16699 12.4779C5.93088 12.4779 5.73644 12.4015 5.58366 12.2487Z" fill="#1D1D1D"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_1_8760">
+                    <rect width="20" height="20" fill="white"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+            </button><a class="footer__link footer__link--end" href="#">Продвижение сайтов «Генерация»</a>
+          </div>
+          <div class="footer__disclaimer">
+            <p>*Дисклеймер рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</p>
+            <p>*Дисклеймер рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</p>
+            <p>*Дисклеймер рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</p>
+          </div>
+        </div>
+      </footer>
+      <div class="widget-nav">
+        <button class="widget-nav__button"></button>
+        <div class="widget-nav__body">
+          <div class="widget-nav__text">Получить бесплатно:</div>
+          <div class="widget-nav__list"><a class="widget-nav__item" href="#first-training">
+              <div class="widget-nav__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF9SURBVHgB1ZaxSgNBEIYnoIVdTGKncM+gYJ1HUEgpGN/AUqvLQ4gp8gKxiJyp8xIaSJtnULATxn+8Odhbbze3e1foD38zuzPf7rGZDFFDMXMKf8EP8J4R78LH1Ka4rGcBwgm8gT/gc4qRnvYRzqSgxjIL+KKgQgI8o1AhaWwU2eoNDuAV+yXAw1DY0CqyrQlcwx0KFZImHuDSAepTrAKBP4+GmuivA+cUIyQO4AsfUNdKQAqVgtaaf10DOIM/4XuziPxgb+GRB9SH36zCO4FVhabGxrRivVcBKnQZBERwYW1MLdCrAyTxnrHXBi6qYIme5BdQTu4AyU37FbVM4JQcn9IHvLLi3s6AtRHnb6BrBu84fy2zGsAbAzSgUFlFlzU/6RHFCInzUGC0UGCf895VAnLecv45kKs7Q/tAJHXY3Rl2AYchrKInvrNfKwdwTKFC0qkFlOnInpoy3ZvomkxZcX+IBnCjt5VH82TSqE2h3gkb7UWBMunKxDuhhvoGht4xS76O8KEAAAAASUVORK5CYII=" alt=""/></div>
+              <div class="widget-nav__text">Первая тренировка</div></a><a class="widget-nav__item" href="#" onclick="window.openPopup('consultation'); return false;">
+              <div class="widget-nav__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAElSURBVHgBvZUBDcIwEEV/UYADcAAOQAISwAEoAAfMwcABKBgoAAfFATg47lhDFrJ2R3bbS5ot6aWvvfZaENGYW0H1eG5rWMGD5dTMHBaQjgwGDLi9FHFjGCCyhyJuBgNEdlXEDS32TWR3ZewCLRHZCX2SqLMqU7RkEL7nhriVc06b7jQ8azkAz8iKzG6Qz8p41lJrx0jMCNZQeUd2e139CHcRmZfJwJKwdz4ivEk/LJGUxbPZjTBLCH1dSsMkc277v/eY0oXuqwPy/7Ym5hnG+MpdQibpuiH9vBxQPlGaWty4VG9IVwGb9+zlmiLCCkXY+m5UQ/EaVPOvcEnxOrSVBaEUftaLrCKVu/TQi+xHKuktGly5gyFUlsoc5cmdhK+c5gu31RsdbuN12iIxlgAAAABJRU5ErkJggg==" alt=""/></div>
+              <div class="widget-nav__text">Консультация</div></a><a class="widget-nav__item" href="#" onclick="window.openPopup('download-schedule'); return false;">
+              <div class="widget-nav__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGeSURBVHgBtZa9SgNBFIXPhoCVuIoIgmgstNTCJ7CUINraiS8Q8wCiKJb6AFaCD2BjI4qlVqJGEIJIIkgqfyKiVmE9F9aQTGZh72TywdkZdn7O3NmZnQFioigqUB9R91SoZVgIYqNpJmVL+Td1RtWhox4EQdFaQrNVywjvqBw8kk14X6IWqS8aHjAtc6R7zJ8yn0N6atQu25433xiRSURD1Gg8/8JOXK8S6WlQobTPGCOpUgtUH3WpjCIJ8chLxpzGfYZckwg8GbUadpjd02gqzldb3mtXo5WOBcLIHplMogd0mDGycSZrlrrD6HJqbUt/gtpED8imqDOP9u+XhkHqggq1ZmPQIyafcDA7gifSmG1TFegYoLbgENkx9PtM+i26mN3AE2nMDqln6JCICi5mG/yrvEABfwxyKK9QI1qzBzZ+g44QxvdKa3YNt0295GKW5zT+QAln45bJrM3shGoktLtiw3foCE2jphlH/soO5YSW/dRv1JmBJ5rTSEO5skn4c/DPrzwyloIneDqZWygllsiN1vEmZSI37PX/fv8Avexpt7XmHukAAAAASUVORK5CYII=" alt=""/></div>
+              <div class="widget-nav__text">Скачать распиание тренировок</div></a></div>
+        </div>
+      </div><a class="widget-call" href="tel:+74992837379"></a>
+      <div class="widget-gift">
+        <button class="widget-gift__button" onclick="window.openPopup('lucky-wheel'); return false;"><img src="assets/img/widget-gift.png" alt=""/></button>
+        <button class="widget-gift__close-btn"></button>
+      </div>
+      <div class="widget-video">
+        <div class="widget-video__text">Нажмите</div>
+        <button class="widget-video__close-btn"></button>
+        <div class="widget-video__container">
+          <iframe src="https://www.youtube.com/embed/bTqVqk7FSmY?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0" allowfullscreen="allowfullscreen" allowtransparency="allowtransparency" allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/plyr/plyr.js"></script>
+    <script src="assets/libs/spin-wheel/spin-wheel.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.section:not(:first-child) {
+  margin-top: 120px;
+}
+@media (max-width: 1610px) {
+  .section:not(:first-child) {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .section:not(:first-child) {
+    margin-top: 50px;
+  }
+}

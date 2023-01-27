@@ -1,0 +1,155 @@
+.lucky-wheel {
+  max-width: 100%;
+  width: 855px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 80px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1610px) {
+  .lucky-wheel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 55px;
+  }
+}
+.lucky-wheel__wrapper {
+  position: relative;
+  width: 412px;
+  height: 412px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .lucky-wheel__wrapper {
+    width: 235px;
+    height: 235px;
+  }
+}
+.lucky-wheel__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  width: 27px;
+  height: 27px;
+  background-image: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='13.5055' cy='13' rx='13.0954' ry='13' fill='black'/%3E%3Cellipse cx='13.504' cy='13' rx='8.05868' ry='8' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .lucky-wheel__wrapper::after {
+    width: 15px;
+    height: 15px;
+  }
+}
+.lucky-wheel__pointer {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  width: 74px;
+  height: 39px;
+  color: var(--accent);
+}
+@media (max-width: 767px) {
+  .lucky-wheel__pointer {
+    width: 56px;
+    height: 30px;
+  }
+}
+.lucky-wheel__dot {
+  position: absolute;
+  top: calc(50% - 3px);
+  left: calc(50% - 3px);
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  will-change: transform;
+}
+@media (max-width: 767px) {
+  .lucky-wheel__dot {
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 4px;
+  }
+}
+.lucky-wheel__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.lucky-wheel__title {
+  margin-bottom: 15px;
+  font: 700 40px/1.2 "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 1610px) {
+  .lucky-wheel__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .lucky-wheel__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+.lucky-wheel__title b {
+  color: var(--accent);
+}
+.lucky-wheel__descr {
+  margin-bottom: 30px;
+  font-size: 16px;
+  letter-spacing: 0.015em;
+}
+@media (max-width: 767px) {
+  .lucky-wheel__descr {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+}
+.lucky-wheel__ui-input {
+  margin-bottom: 12px;
+}
+.lucky-wheel__ui-button {
+  width: 100%;
+  padding: 22px;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .lucky-wheel__ui-button {
+    padding: 11px;
+    font-size: 13px;
+  }
+}
+.lucky-wheel__ui-checkbox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 22px auto 0;
+}
+@media (max-width: 767px) {
+  .lucky-wheel__ui-checkbox {
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,130 @@
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1;
+  flex: 0 1;
+  padding: 30px 0 15px;
+  color: #fff;
+  background: #2e2e2e;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 25px 0 12px;
+  }
+}
+.footer__text p, .footer__disclaimer p {
+  margin: 0;
+}
+.footer__main {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+}
+.footer__link {
+  justify-self: center;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: var(--accent);
+}
+@media (max-width: 767px) {
+  .footer__link {
+    font-size: 12px;
+  }
+}
+.footer__link--end {
+  justify-self: end;
+  grid-row: 1/span 2;
+  grid-column: 3/4;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .footer__link--end {
+    grid-row: unset;
+    grid-column: unset;
+    justify-self: center;
+  }
+}
+.footer__unfold {
+  position: relative;
+  justify-self: center;
+  padding: 0 25px 0 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .footer__unfold {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+@media (max-width: 767px) {
+  .footer__unfold:not(:first-child) {
+    margin-top: 15px;
+  }
+}
+.footer__unfold svg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer__unfold.active svg {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.footer__text {
+  grid-row: span 2;
+}
+@media (max-width: 767px) {
+  .footer__text {
+    grid-row: unset;
+    justify-self: center;
+  }
+}
+.footer__text p:not(:last-child) {
+  margin-bottom: 3px;
+}
+@media (max-width: 767px) {
+  .footer__text p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.footer__disclaimer {
+  position: relative;
+  display: none;
+  padding-top: 20px;
+}
+.footer__disclaimer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: radial-gradient(50% 25% at 50% 75%, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.footer__disclaimer p:not(:last-child) {
+  margin-bottom: 10px;
+}
