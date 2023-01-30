@@ -3,7 +3,8 @@
 :root {
   --accent: #aaff3f;
   --accent-rgb: 170 255 63;
-  --accent90: #77a938;
+  --accent90: #429d3d;
+  --accent80: #77a938;
   --accent60: #c7fc86;
   --accent40: #d5dba6;
 }
@@ -412,6 +413,16 @@ a {
     transform: translateY(-50%) scale(1.15);
   }
 }
+.ui-button--next:not(.ui-button--disabled):not(:hover) .ui-button__text::before, .ui-button--next:not(.ui-button--disabled):not(:hover) .ui-button__text::after {
+  --translate-x: 8px;
+  -webkit-animation: arrow-translate 0.8s linear infinite alternate;
+  animation: arrow-translate 0.8s linear infinite alternate;
+}
+@media (max-width: 767px) {
+  .ui-button--next:not(.ui-button--disabled):not(:hover) .ui-button__text::before, .ui-button--next:not(.ui-button--disabled):not(:hover) .ui-button__text::after {
+    --translate-x: 5px;
+  }
+}
 .ui-button--next::before {
   content: "";
   position: absolute;
@@ -603,6 +614,26 @@ a {
   }
   100% {
     left: 110%;
+  }
+}
+@-webkit-keyframes arrow-translate {
+  0% {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    -webkit-transform: translate(var(--translate-x), -50%);
+    transform: translate(var(--translate-x), -50%);
+  }
+}
+@keyframes arrow-translate {
+  0% {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    -webkit-transform: translate(var(--translate-x), -50%);
+    transform: translate(var(--translate-x), -50%);
   }
 }
 .ui-checkbox {
