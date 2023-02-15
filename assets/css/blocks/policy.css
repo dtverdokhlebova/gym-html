@@ -4,7 +4,7 @@
 .policy__title:not(:last-child), .policy__descr:not(:last-child) {
   margin-bottom: 40px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .policy__title:not(:last-child), .policy__descr:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -20,7 +20,7 @@
   font-size: 40px;
   letter-spacing: 0.02em;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .policy__title {
     font-size: 30px;
   }
@@ -34,7 +34,7 @@
   font-size: 18px;
   letter-spacing: 0.02em;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .policy__descr {
     font-size: 16px;
   }

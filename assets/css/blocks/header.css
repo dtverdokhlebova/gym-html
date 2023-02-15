@@ -8,7 +8,7 @@
   color: #fff;
   background: #040402;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header {
     padding: 20px 0;
   }
@@ -27,9 +27,9 @@
   align-items: center;
   gap: 60px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header .inner {
-    gap: 45px;
+    gap: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -49,7 +49,7 @@
   gap: 30px;
   margin-right: auto;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__company {
     gap: 20px;
   }
@@ -60,7 +60,7 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__logo {
     max-width: 90px;
   }
@@ -81,13 +81,13 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__descr {
     max-width: 165px;
     font-size: 14px;
   }
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__descr {
     display: none;
   }
@@ -98,8 +98,9 @@
   font-size: 14px;
   line-height: 1.2;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__schedule {
+    margin-right: 0;
     font-size: 12px;
   }
 }
@@ -117,7 +118,6 @@
     -ms-flex-align: baseline;
     align-items: baseline;
     gap: 4px;
-    margin-right: 0;
     padding-left: 10px;
     font-size: 8px;
   }
@@ -136,7 +136,7 @@
   font-weight: 500;
   font-size: 16px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__schedule-bot {
     font-size: inherit;
   }
@@ -176,7 +176,7 @@
   align-items: center;
   gap: 15px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 767px) {
   .header__connect {
     display: none;
   }
@@ -197,6 +197,13 @@
   color: #101318;
   font-size: 10px;
   line-height: 1.2;
+}
+@media (max-width: 1249px) {
+  .header__connect-link {
+    max-width: 120px;
+    gap: 5px;
+    padding: 10px 12px;
+  }
 }
 .header__connect-link:active {
   background: var(--accent);
@@ -230,6 +237,11 @@
   max-width: 126px;
   font-size: 14px;
 }
+@media (max-width: 767px) {
+  .header__connect-text {
+    font-size: 12px;
+  }
+}
 .header__contacts {
   display: grid;
   gap: 5px;
@@ -246,7 +258,7 @@
   font-size: 23px;
   line-height: 1.2;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__tel {
     font-size: 18px;
   }
@@ -261,7 +273,7 @@
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .header__consult {
     font-size: 14px;
   }

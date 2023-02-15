@@ -174,7 +174,7 @@ function quiz() {
         if (input.value !== '') {
           items[currentItem].dataset.quizValidate = ''
           nextButton.classList.remove('ui-button--disabled')
-        } else if (!items[currentItem].querySelector('[data-quiz-difficult-checkbox]')?.checked) {
+        } else if (items[currentItem].querySelector('[data-quiz-difficult-checkbox]') && (!items[currentItem].querySelector('[data-quiz-difficult-checkbox]').checked)) {
           delete items[currentItem].dataset.quizValidate
           nextButton.classList.add('ui-button--disabled')
         }
@@ -187,7 +187,7 @@ function quiz() {
         if (checkbox.checked) {
           items[currentItem].dataset.quizValidate = ''
           nextButton.classList.remove('ui-button--disabled')
-        } else if (!items[currentItem].querySelector('.ui-input input')?.value) {
+        } else if (items[currentItem].querySelector('.ui-input input') && (!items[currentItem].querySelector('.ui-input input').value)) {
           delete items[currentItem].dataset.quizValidate
           nextButton.classList.add('ui-button--disabled')
         }
@@ -195,7 +195,7 @@ function quiz() {
     }
 
     nextButton.addEventListener('click', function () {
-      if (Object.hasOwn(items[currentItem].dataset, 'quizValidate')) {
+      if (items[currentItem].hasAttribute('data-quiz-validate')) {
         items[currentItem].classList.remove('active')
         currentItem++
         if (currentItem === countItems) {
@@ -209,7 +209,7 @@ function quiz() {
         } else {
           items[currentItem].classList.add('active')
           backButton.classList.remove('ui-button--hidden')
-          if (!Object.hasOwn(items[currentItem].dataset, 'quizValidate')) nextButton.classList.add('ui-button--disabled')
+          if (!items[currentItem].hasAttribute('data-quiz-validate')) nextButton.classList.add('ui-button--disabled')
         }
 
         progressPercent.textContent = Math.floor(100 / countItems * currentItem)

@@ -18,7 +18,7 @@
   background: #ededed;
   border-radius: 20px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .popup__container {
     padding: 50px;
   }
@@ -59,7 +59,7 @@
 .popup--p-xs .popup__container {
   padding: 70px 35px 50px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .popup--p-xs .popup__container {
     padding: 50px 35px;
   }
@@ -74,7 +74,7 @@
   background: #262626;
   border-radius: 0;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .popup--lucky-wheel .popup__container {
     padding: 70px 40px;
   }
@@ -114,7 +114,7 @@
   font-weight: 600;
   font-size: 30px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .popup-form__title {
     font-size: 24px;
   }
@@ -135,7 +135,7 @@
   font-weight: 500;
   font-size: 24px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .popup-form__subtitle {
     font-size: 18px;
     margin-bottom: 50px;

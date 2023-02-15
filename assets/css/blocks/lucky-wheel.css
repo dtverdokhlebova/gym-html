@@ -11,7 +11,7 @@
   color: #fff;
   text-align: center;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .lucky-wheel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -102,7 +102,7 @@
   font: 700 40px/1.2 "Bebas Neue", "Arial", sans-serif;
   text-transform: uppercase;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .lucky-wheel__title {
     font-size: 35px;
   }

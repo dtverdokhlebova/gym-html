@@ -6,7 +6,7 @@
   background: #040402;
   overflow: hidden;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner {
     min-height: 955px;
   }
@@ -34,7 +34,7 @@
   padding-right: 830px;
   padding-bottom: 110px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner .inner {
     padding-top: 100px;
     padding-right: 285px;
@@ -87,7 +87,7 @@
   -webkit-animation: fade-up 1s forwards 0.8s;
   animation: fade-up 1s forwards 0.8s;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__tag {
     margin-bottom: 25px;
     padding: 15px 20px;
@@ -112,7 +112,7 @@
   -webkit-animation: fade-up 1s forwards 0.8s;
   animation: fade-up 1s forwards 0.8s;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__title {
     max-width: 1015px;
     margin-bottom: 50px;
@@ -137,7 +137,7 @@
   -webkit-animation: fade-up 1s forwards 0.8s;
   animation: fade-up 1s forwards 0.8s;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__descr {
     max-width: 68%;
     font-size: 24px;
@@ -152,7 +152,7 @@
 .banner__descr:not(:last-child) {
   margin-bottom: 40px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__descr:not(:last-child) {
     margin-bottom: 45px;
   }
@@ -172,7 +172,7 @@
   -webkit-animation: fade-up 1s forwards 0.8s;
   animation: fade-up 1s forwards 0.8s;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__benefits {
     grid-auto-flow: unset;
     grid-template-columns: repeat(2, auto);
@@ -187,7 +187,7 @@
 .banner__benefits:not(:last-child) {
   margin-bottom: 90px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__benefits:not(:last-child) {
     margin-bottom: 70px;
   }
@@ -212,7 +212,7 @@
   height: 51px;
   margin-bottom: 20px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__benefit-icon {
     width: 35px;
     height: 35px;
@@ -233,7 +233,7 @@
   font-weight: 600;
   font-size: 20px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__benefit-name {
     font-size: 18px;
   }
@@ -249,7 +249,7 @@
   max-width: 830px;
   max-height: 830px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__images {
     top: 285px;
     right: -155px;
@@ -341,7 +341,7 @@
 }
 @media (max-width: 767px) {
   .banner__connect, .banner__ui-button {
-    padding: 8px 18px;
+    padding: 8px 18px 7px;
   }
 }
 @media (max-width: 767px) {
@@ -422,7 +422,7 @@
   right: 10%;
   z-index: 6;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card:nth-child(2) {
     top: 29%;
     right: 28%;
@@ -432,7 +432,7 @@
   right: 27%;
   bottom: 15%;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card:nth-child(3) {
     right: 38%;
     bottom: 12%;
@@ -442,7 +442,7 @@
   bottom: 35%;
   left: 8%;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card:nth-child(4) {
     bottom: 42%;
     left: 1%;
@@ -477,7 +477,7 @@
   animation: scale-pulse 2s infinite;
   cursor: pointer;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card-btn {
     width: 55px;
     height: 55px;
@@ -501,7 +501,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card-wrapp {
     padding: 10px 10px 15px;
     max-width: 200px;
@@ -518,7 +518,7 @@
   width: 265px;
   height: 190px;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card-img {
     width: 150px;
     height: 100px;
@@ -543,7 +543,7 @@
   font-size: 20px;
   text-align: center;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner__card-name {
     margin-top: 15px;
     font-size: 16px;
@@ -611,7 +611,7 @@
   width: 100%;
   margin-top: 0;
 }
-@media (max-width: 1610px) {
+@media (max-width: 1249px) {
   .banner--thx .banner__foot {
     margin-top: auto;
   }
